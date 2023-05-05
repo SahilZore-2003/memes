@@ -1,0 +1,79 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meme App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="grid">
+        <img src="poster/jay hind dosto.jpeg" name="audios/Jai Hind Dosto.m4a" alt="">
+        <img src="poster/chup bilkul chup.png" name="audios/Chup bilkul chup.mp4" alt="">
+    </div>
+    <div class="grid">
+        <img src="poster/control.png" name="audios/Control.mp4" alt="">
+        <img src="poster/laughfing.png" name="audios/laughfing.mp4" alt="">
+    </div>
+    <div class="grid">
+        <img src="poster/zeher khane ke paise nahi.png" name="audios/zeher khane ke paise nahi.mp4" alt="">
+        <img src="poster/zeher.png" name="audios/zeher.mp4" alt="">
+    </div>
+
+    <div class="grid">
+        <img src="poster/khatam.png" name="audios/khatam.mp4" alt="">
+        <img src="poster/heavy driver.png" name="audios/heavy driver.mp4" alt="">
+    </div>
+    <div class="grid">
+        <img src="poster/nikal laude.png" name="audios/nikal laude.mp4" alt="">
+        <img src="poster/confuse.png" name="audios/confused.mp4" alt="">
+    </div>
+    <div class="grid">
+        <img src="poster/laparva.png" name="audios/laparva.mp4" alt="">
+        <img src="poster/bezaati.png" name="audios/bezzati.mp4" alt="">
+    </div>
+    <div class="grid">
+        <img src="poster/maro.png" name="audios/maro.mp4" alt="">
+        <img src="poster/wah.png" name="audios/wah.mp4" alt="">
+    </div>
+    <div class="grid">
+        <img src="poster/nahi.png" name="audios/nahi.mp4" alt="">
+        <img src="poster/dar nahi lagata.png" name="audios/dar nahi lagata.mp4" alt="">
+    </div>
+    <div class="grid">
+        <img src="poster/jaldi bol.png" name="audios/jaldi bol.mp4" alt="">
+        <img src="poster/kehana kya chahate ho.png" name="audios/kehana kya chahate ho.mp4" alt="">
+    </div>
+    <div class="grid">
+        <img src="poster/bap ko mat sekha.png" name="audios/Baap ko mat sekha.mp4" alt="">
+        <img src="poster/bomb se uda dunga.png" name="audios/bomb se uda dunga.mp4" alt="">
+    </div>
+    <div class="grid">
+        <img src="poster/cheating.png" name="audios/cheating.mp4" alt="">
+        <img src="poster/explosion.png" name="audios/explosion.mp4" alt="">
+
+    </div>
+  
+
+
+
+    <script>
+        let img = document.querySelectorAll('img');
+        img.forEach(val => {
+            val.addEventListener('click', () => {
+                let audio = new Audio(val.name);
+                audio.play();
+            })
+        })
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
