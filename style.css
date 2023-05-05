@@ -23,9 +23,7 @@
 
 }
 
-img:hover{
-    background-color: #0b032d;
-}
+
 
 @media (max-width:430px){
     .grid img{

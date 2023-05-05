@@ -61,10 +61,26 @@
 
     <script>
         let img = document.querySelectorAll('img');
+
+        function erase() {
+            
+                img.forEach(val => {
+                    val.style.backgroundColor = "transparent";
+                })
+            
+        }
+
+
+
+
         img.forEach(val => {
             val.addEventListener('click', () => {
+                val.style.backgroundColor = "#0b032d";
                 let audio = new Audio(val.name);
                 audio.play();
+                audio.addEventListener('ended', (event) => {
+                    erase()
+                });
             })
         })
 
